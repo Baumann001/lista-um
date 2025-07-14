@@ -7,10 +7,11 @@
 <body>
 
  <form method="POST" action="">
-        <label for="digita_numero">Verifique o número.</label>
-        <input type="number" id="digita_numero" name="digita_numero" required>
-        <button type="submit" name="verificar_digitado">Verificar</button>
-   </form>
+    <label for="numero">Digite um número:</label>
+    <input type="number" name="numero" id="numero" required>
+    <button type="submit" name="verificar">Verificar</button>
+</form>
+
 
    <?php
    
