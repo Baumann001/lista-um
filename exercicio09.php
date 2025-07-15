@@ -13,6 +13,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if (isset($_POST['verificar'])) {
     $n1 = $_POST['num1'];
     $n2 = $_POST['num2'];
@@ -31,6 +33,7 @@ if (isset($_POST['verificar'])) {
 
     echo "p>A soma dos números entre <strong>$n1</strong> e <strong>$n2</strong> é: <strong>$soma</strong></p>";
 
+}
 }
 ?>
     
