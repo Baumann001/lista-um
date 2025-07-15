@@ -26,7 +26,8 @@ if(isset($_POST['enviar'])){
     }
 
     $i = $i +1;
-
+    }
+    echo "<p>Tem $qtdVogais vogais na frase.</p>";
 }
 ?>
 
