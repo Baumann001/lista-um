@@ -21,7 +21,7 @@ if (isset($_POST['verificar'])) {
     }elseif($num1 <16 ){
     echo "Voce não pode votar $txt!";
     }else{
-    echo "voce pode votar!"
+    echo "voce pode votar!";
     }
 
 
