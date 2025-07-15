@@ -11,6 +11,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if(isset($_POST['ver'])){
     $s = $_POST['senha'];
 
@@ -27,6 +29,7 @@ if(isset($_POST['ver'])){
     } else {
         echo "tem que ter pelo menos 8 caracteres";
     }
+}
 }
 ?>
 

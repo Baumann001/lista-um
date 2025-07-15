@@ -13,6 +13,9 @@
 </form>
 
 <?php
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if(isset($_POST['btn'])){
     $peso = $_POST['p'];
     $alt = $_POST['a'];
@@ -37,6 +40,7 @@ if(isset($_POST['btn'])){
     } else {
         echo "altura errada";
     }
+}
 }
 ?>
 

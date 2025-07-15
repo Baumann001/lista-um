@@ -12,6 +12,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if (isset($_POST['verificar'])) {
     $num1 = $_POST['num1'];
     $txt = $_POST['txt'];
@@ -25,6 +27,7 @@ if (isset($_POST['verificar'])) {
     }
 
 
+}
 }
 
 ?>

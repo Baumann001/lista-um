@@ -16,6 +16,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if (isset($_POST['entrar'])) {
     $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
@@ -29,6 +31,7 @@ if (isset($_POST['entrar'])) {
     } else {
         echo "Usuário ou senha incorretos.";
     }
+}
 }
 ?>
 

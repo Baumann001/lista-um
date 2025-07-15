@@ -11,6 +11,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if (isset($_POST['verificar'])) {
     $ano = $_POST['anoDigitado'];
 
@@ -19,6 +21,7 @@ if (isset($_POST['verificar'])) {
     } else {
         echo "O ano $ano não é bissexto.";
     }
+}
 }
 ?>
     

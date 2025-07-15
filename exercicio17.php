@@ -13,6 +13,8 @@
 </form>
 
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
 if(isset($_POST['ver'])){
     $d = $_POST['d'];
     $m = $_POST['m'];
@@ -23,6 +25,7 @@ if(isset($_POST['ver'])){
     } else {
         echo "data errada";
     }
+}
 }
 ?>
 
